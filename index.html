@@ -6,32 +6,40 @@
     <link rel="shortcut icon" href="Microsoft-Fluentui-Emoji-Flat-Detective-Flat-Light.512.png">
     <title>Password Game</title>
 
+    <link rel="stylesheet" href="styles/index.css">
+
     <!-- Importando a biblioteca PyScript -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
     <style>
         .barra   {
-            background-color: #9443ff; /* Cor de fundo da barra */
             color: rgb(0, 0, 0); /* Cor do texto */
             padding: 0px; /* Espaçamento interno */
-            text-align: center; /* Alinhamento do texto */
+            text-align: center;
             font-size: 25px;/*tamanho da letra*/
             font-family: cursive; /*font da letra*/
+        }
+
+        .barra > h1 {
+            display: inline;
+            padding: 0 5px;
+            background-color: #9443ff;
         }
 
     </style>
 
 </head>
 <style>
-body {
-    background-color: rgb(207, 156, 255);/*cor do fundo da tela (background)*/
-}
+    body {
+        background-color: rgb(207, 156, 255);/*cor do fundo da tela (background)*/
+    }
 
 </style>
 <body>
     <div class="barra"> 
         <h1>Password Game</h1> 
     </div>
+
 
     <input id="input-texto" type="text" />
     <button id="btn-enviar" py-click="enviar_texto">Enviar</button>
